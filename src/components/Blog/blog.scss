@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-blog {
+  max-width: 1400px;
+  margin: auto;
+}
+
+body {
+  background-color: black;
+}
+
+.card-information-text {
+  color: white;
+  font-size: 40px;
+  padding-top: 6rem;
+  font-weight: 500;
+}
+
+.color-bg-parent {
+  position: relative;
+  background-color: #141414;
+  margin-bottom: 45px;
+  padding-bottom: 50px;
+  z-index: 1;
+}
+
+.container-map {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.grid-of-blog-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+  grid-gap: 20px;
+}
+
+.img-blog {
+  width: 91%;
+  height: 55%;
+}
+
+.title-of-blog {
+  text-decoration: none;
+  color: white;
+  font-weight: 550;
+  font-size: 110%;
+  width: 80%;
+}
+
+.title-of-blog:hover .a-blog:hover {
+  color: #0750d0;
+}
+
+.a-blog {
+  font-family: "Source Serif 4", sans-serif;
+  font-size: 110%;
+  text-decoration: none;
+  color: white;
+  transition: 300ms;
+}
+
+.data-blog {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 5px 0px;
+}
+
+.btn-load-more-blog {
+  color: #0750d0;
+  border: 1px solid #0750d0;
+  padding: 10px 20px;
+  transition: 500ms;
+  margin-top: 2%;
+}
+
+.btn-load-more-blog:hover {
+  background-color: #0750d0;
+  border: 1px solid #0750d0;
+  color: white;
+}
+
+.parent-load-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-blog {
+  margin-top: 6%;
+}
+
+@media only screen and (max-width: 430px) {
+  .card-information-text {
+    color: white;
+    font-size: 35px;
+    padding-top: 6rem;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  .grid-of-blog-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .img-blog {
+    width: 100%;
+    height: auto;
+  }
+  .parent-div-content-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-of-blog {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    font-size: 20px;
+    width: 340px;
+  }
+}

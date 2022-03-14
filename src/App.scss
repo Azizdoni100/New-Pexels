@@ -1,0 +1,57 @@
+.parent-main-content-load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  animation: animate 2s infinite;
+}
+
+.loader{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  width: 90px;
+	height: 90px;
+	gap: 5px;
+	padding: 5px;
+}
+.cell{
+	background: blue;
+	border-radius: 4px;
+}
+.cell:nth-of-type(1){
+  animation: shrink 3s linear infinite;
+}
+.cell:nth-of-type(2){
+  animation: shrink 3s linear infinite;
+  animation-delay: 0.25s;
+}
+.cell:nth-of-type(3){
+  animation: shrink 3s linear infinite;
+  animation-delay: 0.75s;
+}
+.cell:nth-of-type(4){
+  animation: shrink 3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.sections{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+@keyframes shrink{
+  50%{
+		background: transparent;
+  }
+}
+
+@keyframes animate {
+  0%{
+    opacity: 1;
+  }
+  100%  {
+    opacity: 0.8;
+  }
+}

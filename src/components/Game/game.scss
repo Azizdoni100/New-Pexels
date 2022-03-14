@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.jarallax-img {
+  background: url("https://promo-theme.com/plaxer/wp-content/uploads/2019/12/img14.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  padding: 150px 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  color: #fff;
+}
+
+.jarallax-image-parallax {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 1rem;
+}
+
+.subtitle-of-image {
+  width: 400px;
+}
+
+.title-of-image {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

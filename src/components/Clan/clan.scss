@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Serif+4&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-clan{
+    background-image: url("https://promo-theme.com/plaxer/wp-content/uploads/2019/12/img17.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.title-bg-clan{
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 115%;
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 400px;
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.title-parent{
+    padding-top: 30%;
+
+}
+
+.parent-grid-box{
+    margin-top: 8%;
+}
+
+.parent-sectond-clan{
+    margin-top: 4%;
+    position: relative;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2vmin;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .image-clan {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 110%;
+    height: 250px;
+    margin-bottom: -40%;
+    clip-path: polygon(50% 0%, 92% 50%, 50% 100%, 9% 50%);
+    transform: scale(1);
+    transition: all 0.25s;
+  }
+  
+  .image-clan:nth-child(7n+1) {
+    grid-column: 2/span 2;
+  }
+  
+  .image-clan:hover {
+     z-index: 2;
+    transform: scale(2);
+  }
+
+@media only screen and (max-width: 430px) {
+    
+}

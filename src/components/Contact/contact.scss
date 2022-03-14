@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.iframe__map {
+  margin-top: 5rem;
+  opacity: 0.6;
+}
+
+.contact-title {
+  font-family: sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin: 10% 34% 3% auto;
+}
+
+.parent-contact__inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__input {
+  color: rgb(24, 24, 24);
+  padding: 10px;
+  width: 100%;
+  margin: 0px 30px 10px 0px;
+}
+
+.contact__input__message {
+  color: rgb(24, 24, 24);
+  padding: 10px;
+  width: 95.5%;
+  height: 10rem;
+  margin: 20px 20px 10px 0px;
+}
+
+.parent__contact__second {
+  display: flex;
+  justify-content: center;
+}
+
+.child__contact__main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.btn-contact-send {
+  padding: 10px 25px;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  background: -webkit-linear-gradient(
+    135deg,
+    rgb(131, 65, 129),
+    rgb(32, 88, 187) 61%
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    rgb(131, 65, 129),
+    rgb(32, 88, 187) 61%
+  );
+  background: linear-gradient(135deg, rgb(131, 65, 129), rgb(32, 88, 187) 61%);
+  border: none;
+  margin-top: 10px;
+  transition: 1s;
+}
+
+.btn-contact-send:hover {
+  color: rgb(0, 0, 0);
+}
+
+.subtitle__contact {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text__contact {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+.child__title-contact {
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 430px) {
+  .iframe__map {
+    margin-top: 4rem;
+  }
+  .contact-title {
+    font-family: sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 3% 3% 3% auto;
+    text-align: center;
+  }
+  .parent__contact__second {
+    display: flex;
+    flex-direction: column;
+  }
+  .parent__contact__second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
